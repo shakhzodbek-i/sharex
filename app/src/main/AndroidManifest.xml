@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name=".ShareXApp"
-        tools:ignore="GoogleAppIndexingWarning" />
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".iu.sign_in.SignInActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>
