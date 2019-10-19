@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "29.0.1"
+
     defaultConfig {
         applicationId "com.king.corp.sharex"
         minSdkVersion 19
@@ -24,6 +24,8 @@ dependencies {
 
     // Support
     implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
 
     // Tests
     testImplementation 'junit:junit:4.12'
@@ -40,5 +42,4 @@ dependencies {
     annotationProcessor 'com.google.dagger:dagger-android-processor:2.20'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.20'
 }
-
 apply plugin: 'com.google.gms.google-services'
