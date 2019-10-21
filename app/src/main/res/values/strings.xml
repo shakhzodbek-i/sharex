@@ -4,7 +4,14 @@
     <string name="email">Email</string>
     <string name="phone">Phone number</string>
     <string name="password">Password</string>
+    <string name="forgotpassword">Forgot password?</string>
     <string name="signup">SIGN UP</string>
+    <string name="selectusertype">Select your user type</string>
+    <string name="university">University</string>
+    <string name="educationcenter">Education \nCenter</string>
+    <string name="tourist">Tourist</string>
+    <string name="login">Log in</string>
+    <string name="signinwith">Sign in with</string>
 
 
 </resources>

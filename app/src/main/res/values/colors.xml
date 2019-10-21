@@ -8,4 +8,7 @@
     <color name="whitelike">#BBBBBB</color>
     <color name="whitepure">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="blacktrans">#60000000</color>
+    <color name="greyish">#AAAAAA</color>
+    <color name="greyish1">#CCCCCC</color>
 </resources>

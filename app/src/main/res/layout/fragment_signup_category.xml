@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_left_arrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp">
+
+            </ImageView>
+
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/black"
+                android:fontFamily="@font/fibra_one_regular"
+                android:gravity="center"
+                android:text="@string/selectusertype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:background="@drawable/tourist"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/blacktrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/sp36"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/tourist"
+            android:fontFamily="@font/fibra_one_bold"
+            android:textColor="@color/whitepure"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/university"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/blacktrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/sp36"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/university"
+            android:fontFamily="@font/fibra_one_bold"
+            android:textColor="@color/whitepure"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/educationcenter"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/blacktrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/sp36"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/educationcenter"
+            android:fontFamily="@font/fibra_one_bold"
+            android:textColor="@color/whitepure"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
