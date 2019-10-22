@@ -8,7 +8,7 @@
     >
 
     <RelativeLayout
-        android:id="@+id/rlfraglogin"
+        android:id="@+id/rlfragsignupeducenter2"
         android:background="@drawable/sharex"
         app:layout_constraintHeight_percent="0.32"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,7 +34,7 @@
                     android:textAllCaps="true"
                     android:textSize="@dimen/sp20"
                     android:fontFamily="@font/fibra_one_regular"
-                    android:text="@string/login"
+                    android:text="@string/signup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -45,80 +45,45 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/llfragloginInput"
+        android:layout_marginTop="@dimen/dp20"
+        android:id="@+id/llfragsignupeducenter2Input"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintWidth_percent="0.8"
-        app:layout_constraintHeight_percent="0.25"
         android:gravity="bottom"
-        app:layout_constraintTop_toBottomOf="@+id/rlfraglogin"
+        app:layout_constraintTop_toBottomOf="@+id/rlfragsignupeducenter2"
         android:layout_width="0dp"
-        android:layout_height="0dp">
+        android:layout_height="wrap_content">
 
         <EditText
             android:fontFamily="@font/fibra_one_regular"
             android:layout_marginBottom="@dimen/dp20"
-            android:drawableEnd="@drawable/ic_mail"
-            android:hint="@string/email"
+            android:drawableEnd="@drawable/ic_phone"
+            android:hint="@string/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <EditText
+            android:lines="8"
+            android:maxLines="10"
+            android:gravity="top"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/bg_rect_text2"
             android:fontFamily="@font/fibra_one_regular"
-            android:drawableEnd="@drawable/ic_password"
-            android:hint="@string/password"
+            android:hint="@string/fillinfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            android:textColor="@color/greyish"
-            android:text="@string/forgotpassword"
-            android:layout_gravity="end"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+
 
     </LinearLayout>
 
-    <LinearLayout
-        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
-        android:orientation="horizontal"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintWidth_percent="0.8"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/llfragloginInput"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content">
-
-        <View
-            android:layout_margin="@dimen/dp5"
-            android:layout_weight="1"
-            android:background="@color/greyish1"
-            android:layout_width="0dp"
-            android:layout_height="1dp"/>
-
-        <TextView
-            android:fontFamily="@font/fibra_one_bold"
-            android:textAllCaps="true"
-            android:textColor="@color/greyish"
-            android:text="@string/signinwith"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <View
-            android:layout_margin="@dimen/dp5"
-            android:layout_weight="1"
-            android:background="@color/greyish1"
-            android:layout_width="0dp"
-            android:layout_height="1dp"/>
-
-    </LinearLayout>
 
     <Button
-        android:id="@+id/btnlogin"
+        android:id="@+id/btnsignupeducenter2"
         android:layout_marginBottom="@dimen/dp20"
-        android:text="@string/login"
+        android:text="@string/next"
         android:textSize="@dimen/sp20"
         android:fontFamily="@font/fibra_one_regular"
         android:background="@drawable/bg_rect_text"

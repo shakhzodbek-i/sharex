@@ -8,7 +8,7 @@
     >
 
     <RelativeLayout
-        android:id="@+id/rlfraglogin"
+        android:id="@+id/rlfragsignupeducenter1"
         android:background="@drawable/sharex"
         app:layout_constraintHeight_percent="0.32"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,7 +34,7 @@
                     android:textAllCaps="true"
                     android:textSize="@dimen/sp20"
                     android:fontFamily="@font/fibra_one_regular"
-                    android:text="@string/login"
+                    android:text="@string/signup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -45,16 +45,24 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/llfragloginInput"
+        android:layout_marginTop="@dimen/dp20"
+        android:id="@+id/llfragsignupeducenter1Input"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintWidth_percent="0.8"
-        app:layout_constraintHeight_percent="0.25"
         android:gravity="bottom"
-        app:layout_constraintTop_toBottomOf="@+id/rlfraglogin"
+        app:layout_constraintTop_toBottomOf="@+id/rlfragsignupeducenter1"
         android:layout_width="0dp"
-        android:layout_height="0dp">
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:fontFamily="@font/fibra_one_regular"
+            android:layout_marginBottom="@dimen/dp20"
+            android:drawableEnd="@drawable/ic_identification"
+            android:hint="@string/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <EditText
             android:fontFamily="@font/fibra_one_regular"
@@ -81,13 +89,13 @@
     </LinearLayout>
 
     <LinearLayout
-        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
         android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintWidth_percent="0.8"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/llfragloginInput"
+        app:layout_constraintTop_toBottomOf="@+id/llfragsignupeducenter1Input"
+        app:layout_constraintBottom_toTopOf="@+id/btnsignupeducenter1"
         android:layout_width="0dp"
         android:layout_height="wrap_content">
 
@@ -116,9 +124,9 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnlogin"
+        android:id="@+id/btnsignupeducenter1"
         android:layout_marginBottom="@dimen/dp20"
-        android:text="@string/login"
+        android:text="@string/next"
         android:textSize="@dimen/sp20"
         android:fontFamily="@font/fibra_one_regular"
         android:background="@drawable/bg_rect_text"
