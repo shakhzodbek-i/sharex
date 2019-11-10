@@ -4,8 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/whitepure"
-    >
+    android:background="@color/white">
 
     <RelativeLayout
         android:id="@+id/rlfragsignuptourist1"
@@ -30,7 +29,7 @@
 
                 <TextView
                     android:gravity="center"
-                    android:textColor="@color/whitepure"
+                    android:textColor="@color/white"
                     android:textAllCaps="true"
                     android:textSize="@dimen/sp20"
                     android:fontFamily="@font/fibra_one_regular"
@@ -45,7 +44,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp40"
         android:id="@+id/llfragsignuptourist1Input"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -110,7 +109,7 @@
             android:fontFamily="@font/fibra_one_bold"
             android:textAllCaps="true"
             android:textColor="@color/greyish"
-            android:text="@string/signinwith"
+            android:text="@string/sign_up_with"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -125,7 +124,7 @@
 
     <Button
         android:id="@+id/btnsignuptourist1"
-        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginBottom="@dimen/buttonBottomMargin"
         android:text="@string/next"
         android:textSize="@dimen/sp20"
         android:fontFamily="@font/fibra_one_regular"

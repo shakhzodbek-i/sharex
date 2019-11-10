@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/whitepure"
+    android:background="@color/white"
     >
 
     <RelativeLayout
@@ -30,7 +30,7 @@
 
                 <TextView
                     android:gravity="center"
-                    android:textColor="@color/whitepure"
+                    android:textColor="@color/white"
                     android:textAllCaps="true"
                     android:textSize="@dimen/sp20"
                     android:fontFamily="@font/fibra_one_regular"
@@ -45,7 +45,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/llfragloginInput"
+        android:id="@+id/container_input"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -81,7 +81,7 @@
 
     <Button
         android:id="@+id/btnsignup3"
-        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginBottom="@dimen/buttonBottomMargin"
         android:text="@string/createaccount"
         android:textSize="@dimen/sp20"
         android:fontFamily="@font/fibra_one_regular"

@@ -22,6 +22,11 @@
     <string name="uploadphoto">Upload your image</string>
     <string name="createaccount">Create an account</string>
 
+    <string name="some_error">Some Error Occurred!</string>
+
+    <string name="facebook_app_id">984481718596657</string>
+    <string name="fb_login_protocol_scheme">fb984481718596657</string>
+    <string name="sign_up_with">sign up with</string>
 
 
 </resources>

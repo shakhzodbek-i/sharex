@@ -4,11 +4,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/whitepure"
-    >
+    android:background="@color/white">
 
     <RelativeLayout
-        android:id="@+id/rlfraglogin"
+        android:id="@+id/top_bg"
         android:background="@drawable/sharex"
         app:layout_constraintHeight_percent="0.32"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,6 +22,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/back_btn"
                     android:layout_centerVertical="true"
                     android:src="@drawable/ic_left_arrow_white"
                     android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
 
                 <TextView
                     android:gravity="center"
-                    android:textColor="@color/whitepure"
+                    android:textColor="@color/white"
                     android:textAllCaps="true"
                     android:textSize="@dimen/sp20"
                     android:fontFamily="@font/fibra_one_regular"
@@ -45,26 +45,27 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/llfragloginInput"
+        android:id="@+id/container_input"
         android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp40"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintWidth_percent="0.8"
-        app:layout_constraintHeight_percent="0.25"
-        android:gravity="bottom"
-        app:layout_constraintTop_toBottomOf="@+id/rlfraglogin"
+        app:layout_constraintTop_toBottomOf="@+id/top_bg"
         android:layout_width="0dp"
-        android:layout_height="0dp">
+        android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/input_login_phone"
             android:fontFamily="@font/fibra_one_regular"
             android:layout_marginBottom="@dimen/dp20"
-            android:drawableEnd="@drawable/ic_mail"
-            android:hint="@string/email"
+            android:drawableEnd="@drawable/ic_phone"
+            android:hint="@string/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <EditText
+            android:id="@+id/input_login_pass"
             android:fontFamily="@font/fibra_one_regular"
             android:drawableEnd="@drawable/ic_password"
             android:hint="@string/password"
@@ -72,6 +73,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:id="@+id/action_forget_pass"
             android:textColor="@color/greyish"
             android:text="@string/forgotpassword"
             android:layout_gravity="end"
@@ -81,13 +83,13 @@
     </LinearLayout>
 
     <LinearLayout
-        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
-        android:orientation="horizontal"
+        android:id="@+id/line"
+        android:layout_marginTop="@dimen/dp50"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintWidth_percent="0.8"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/llfragloginInput"
+        app:layout_constraintTop_toBottomOf="@+id/container_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content">
 
@@ -115,9 +117,25 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/line">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/action_google_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonSize="wide"/>
+
+    </LinearLayout>
+
     <Button
-        android:id="@+id/btnlogin"
-        android:layout_marginBottom="@dimen/dp20"
+        android:id="@+id/action_login"
+        android:layout_marginBottom="@dimen/buttonBottomMargin"
         android:text="@string/login"
         android:textSize="@dimen/sp20"
         android:fontFamily="@font/fibra_one_regular"

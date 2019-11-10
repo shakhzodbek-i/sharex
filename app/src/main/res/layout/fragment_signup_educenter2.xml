@@ -4,8 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/whitepure"
-    >
+    android:background="@color/white">
 
     <RelativeLayout
         android:id="@+id/rlfragsignupeducenter2"
@@ -30,7 +29,7 @@
 
                 <TextView
                     android:gravity="center"
-                    android:textColor="@color/whitepure"
+                    android:textColor="@color/white"
                     android:textAllCaps="true"
                     android:textSize="@dimen/sp20"
                     android:fontFamily="@font/fibra_one_regular"
@@ -41,11 +40,10 @@
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
 
-
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp50"
         android:id="@+id/llfragsignupeducenter2Input"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -58,7 +56,7 @@
 
         <EditText
             android:fontFamily="@font/fibra_one_regular"
-            android:layout_marginBottom="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp30"
             android:drawableEnd="@drawable/ic_phone"
             android:hint="@string/phone"
             android:layout_width="match_parent"
@@ -82,7 +80,7 @@
 
     <Button
         android:id="@+id/btnsignupeducenter2"
-        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginBottom="@dimen/buttonBottomMargin"
         android:text="@string/next"
         android:textSize="@dimen/sp20"
         android:fontFamily="@font/fibra_one_regular"

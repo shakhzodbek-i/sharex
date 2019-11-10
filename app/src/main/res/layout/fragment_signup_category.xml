@@ -49,7 +49,7 @@
             android:textAllCaps="true"
             android:text="@string/tourist"
             android:fontFamily="@font/fibra_one_bold"
-            android:textColor="@color/whitepure"
+            android:textColor="@color/white"
             android:layout_centerInParent="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -73,7 +73,7 @@
             android:textAllCaps="true"
             android:text="@string/university"
             android:fontFamily="@font/fibra_one_bold"
-            android:textColor="@color/whitepure"
+            android:textColor="@color/white"
             android:layout_centerInParent="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -97,7 +97,7 @@
             android:textAllCaps="true"
             android:text="@string/educationcenter"
             android:fontFamily="@font/fibra_one_bold"
-            android:textColor="@color/whitepure"
+            android:textColor="@color/white"
             android:layout_centerInParent="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
