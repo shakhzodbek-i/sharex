@@ -3,33 +3,28 @@ package com.king.corp.sharex;
 import android.app.Activity;
 import android.app.Application;
 
+import com.facebook.appevents.AppEventsLogger;
+import com.king.corp.sharex.di.component.ApplicationComponent;
+import com.king.corp.sharex.di.component.DaggerApplicationComponent;
+import com.king.corp.sharex.di.module.ApplicationModule;
 
-import com.king.corp.sharex.dagger.DaggerAppComponent;
 
-import javax.inject.Inject;
+public class ShareXApp extends Application {
 
-import dagger.android.AndroidInjector;
-import dagger.android.DispatchingAndroidInjector;
-import dagger.android.HasActivityInjector;
-
-public class ShareXApp extends Application implements HasActivityInjector {
-
-    @Inject
-    DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
-
+    private ApplicationComponent mApplicationComponent;
     @Override
     public void onCreate() {
         super.onCreate();
 
-        DaggerAppComponent
-                .builder()
-                .application(this)
-                .build()
-                .inject(this);
+        mApplicationComponent = DaggerApplicationComponent.builder()
+                .applicationModule(new ApplicationModule(this)).build();
+
+        mApplicationComponent.inject(this);
+
+        AppEventsLogger.activateApp(this);
     }
 
-    @Override
-    public AndroidInjector<Activity> activityInjector() {
-        return dispatchingAndroidInjector;
+    public ApplicationComponent getComponent() {
+        return mApplicationComponent;
     }
 }

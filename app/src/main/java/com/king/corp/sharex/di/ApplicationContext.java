@@ -1,11 +1,11 @@
-package com.king.corp.sharex.dagger.sign_in;
+package com.king.corp.sharex.di;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import javax.inject.Scope;
+import javax.inject.Qualifier;
 
-@Scope
+@Qualifier
 @Retention(RetentionPolicy.RUNTIME)
-public @interface SignInActivityScope {
+public @interface ApplicationContext {
 }
